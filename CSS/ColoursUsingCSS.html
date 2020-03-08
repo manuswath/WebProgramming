@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			/*
+			 RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+			 An RGBA color value is specified with: rgba(red, green, blue, alpha). 
+			 The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+			 */
+			#p1 {background-color:rgba(255,0,0,0.3);}
+			#p2 {background-color:rgba(0,255,0,0.3);}
+			#p3 {background-color:rgba(0,0,255,0.3);}
+			#p4 {background-color:rgba(192,192,192,0.3);}
+			#p5 {background-color:rgba(255,255,0,0.3);}
+			#p6 {background-color:rgba(255,0,255,0.3);}
+			
+			/*
+			 HSL stands for Hue, Saturation and Lightness.
+
+			An HSL color value is specified with: hsl(hue, saturation, lightness).
+			
+			Hue is a degree on the color wheel (from 0 to 360):
+			0 (or 360) is red
+			120 is green
+			240 is blue
+			Saturation is a percentage value: 100% is the full color.
+			Lightness is also a percentage; 0% is dark (black) and 100% is white.
+			 */
+			#p11 {background-color:hsl(120,100%,50%);}
+			#p12 {background-color:hsl(120,100%,75%);}
+			#p13 {background-color:hsl(120,100%,25%);}
+			#p14 {background-color:hsl(120,60%,70%);}
+			#p15 {background-color:hsl(290,100%,50%);}
+			#p16 {background-color:hsl(290,60%,70%);}
+			
+			/*
+			 	HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+			 	An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. 
+			 	The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+			 */
+			#p21 {background-color:hsla(120,100%,50%,0.3);}
+			#p22 {background-color:hsla(120,100%,75%,0.3);}
+			#p23 {background-color:hsla(120,100%,25%,0.3);}
+			#p24 {background-color:hsla(120,60%,70%,0.3);}
+			#p25 {background-color:hsla(290,100%,50%,0.3);}
+			#p26 {background-color:hsla(290,60%,70%,0.3);}
+			
+			/*
+			 * The CSS3 opacity property sets the opacity for a specified RGB value.
+
+			   The opacity property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+			 */
+			#p31 {background-color:rgb(255,0,0);opacity:0.6;}
+			#p32 {background-color:rgb(0,255,0);opacity:0.6;}
+			#p33 {background-color:rgb(0,0,255);opacity:0.6;}
+			#p34 {background-color:rgb(192,192,192);opacity:0.6;}
+			#p35 {background-color:rgb(255,255,0);opacity:0.6;}
+			#p36 {background-color:rgb(255,0,255);opacity:0.6;}
+		</style>
+	</head>
+	<body>
+	
+		<p>RGBA colors:</p>
+		<p id="p1">Red</p>
+		<p id="p2">Green</p>
+		<p id="p3">Blue</p>
+		<p id="p4">Grey</p>
+		<p id="p5">Yellow</p>
+		<p id="p6">Cerise</p>
+		
+		<p>HSL colors:</p>
+		<p id="p11">Green</p>
+		<p id="p12">Light green</p>
+		<p id="p13">Dark green</p>
+		<p id="p14">Pastel green</p>
+		<p id="p15">Violet</p>
+		<p id="p16">Pastel violet</p>
+		
+		<p>HSLA colors:</p>
+		<p id="p21">Green</p>
+		<p id="p22">Light green</p>
+		<p id="p23">Dark green</p>
+		<p id="p24">Pastel green</p>
+		<p id="p25">Violet</p>
+		<p id="p26">Pastel violet</p>
+		
+		<p>RGB colors with opacity:</p>
+		<p id="p31">Red</p>
+		<p id="p32">Green</p>
+		<p id="p33">Blue</p>
+		<p id="p34">Grey</p>
+		<p id="p35">Yellow</p>
+		<p id="p36">Cerise</p>
+	
+	</body>
+</html>

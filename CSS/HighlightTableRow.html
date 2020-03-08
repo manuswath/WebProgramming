@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Highlight the row of a html table, when you pass the mouse over, using CSS - MdmSoft</title>
+    <style type="text/css">
+        #tableCustomers {
+            border-collapse: collapse;
+            font-family: Verdana;
+            font-size: 11px;
+            width: 520px;
+        }
+ 
+            #tableCustomers th {
+                background: #aaa;
+                color: #ffd800;
+                text-align: left;
+            }
+ 
+            #tableCustomers td {
+                border: 1px solid #bbb;
+                height: 10px;
+                padding: 2px 4px;
+            }
+ 
+            #tableCustomers tr {
+                background-color: #fff;
+            }
+ 
+                /*
+                    Set the background-color and cursor for the table row hover 
+                */
+                #tableCustomers tr:hover {
+                    background-color: lightgreen;
+                    cursor: pointer;
+                }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <table border="1" id="tableCustomers">
+        <tr>
+            <th scope="col">CompanyName</th>
+            <th scope="col">ContactTitle</th>
+            <th scope="col">City</th>
+            <th scope="col">Country</th>
+        </tr>
+        <tr>
+            <td>Rattlesnake Canyon Grocery</td>
+            <td>Assistant Sales Representative</td>
+            <td>Albuquerque</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Old World Delicatessen</td>
+            <td>Sales Representative</td>
+            <td>Anchorage</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Save-a-lot Markets</td>
+            <td>Sales Representative</td>
+            <td>Boise</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>The Cracker Box</td>
+            <td>Marketing Assistant</td>
+            <td>Butte</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Marketing Manager</td>
+            <td>Cowes</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Hungry Coyote Import Store</td>
+            <td>Sales Representative</td>
+            <td>Elgin</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Great Lakes Food Market</td>
+            <td>Marketing Manager</td>
+            <td>Eugene</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Trail's Head Gourmet Provisioners</td>
+            <td>Sales Associate</td>
+            <td>Kirkland</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Split Rail Beer & Ale</td>
+            <td>Sales Manager</td>
+            <td>Lander</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>North/South</td>
+            <td>Sales Associate</td>
+            <td>London</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>B's Beverages</td>
+            <td>Sales Representative</td>
+            <td>London</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Seven Seas Imports</td>
+            <td>Sales Manager</td>
+            <td>London</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Consolidated Holdings</td>
+            <td>Sales Representative</td>
+            <td>London</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Eastern Connection</td>
+            <td>Sales Agent</td>
+            <td>London</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Around the Hornn</td>
+            <td>Sales Representative</td>
+            <td>London</td>
+            <td>UK</td>
+        </tr>
+    </table>
+</body>
+</html>

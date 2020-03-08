@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>How to create a table with alternating color rows with CSS - MdmSoft</title>
+    <style type="text/css">
+        #tableCustomers {
+            border-collapse: collapse;
+            font-family: Verdana;
+            font-size: 11px;
+            width: 520px;
+        }
+ 
+            #tableCustomers th {
+                background: #aaa;
+                color: #ffd800;
+                text-align:left;
+            }
+ 
+            #tableCustomers td {
+                border: 1px solid #bbb;
+                height: 10px;
+                padding: 2px 4px;
+            }
+ 
+            #tableCustomers tr {
+                background: #fff;
+            }
+                /*  
+                Set the background color for all the ODD background rows  */
+                #tableCustomers tr:nth-child(odd) {
+                    background-color: rgb(255,240,240);
+                }
+                /*  Define the background color for all the EVEN background rows  */
+                #tableCustomers tr:nth-child(even) {
+                    background: rgb(240,240,255);
+                }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <table border="1" id="tableCustomers">
+        <tr>
+            <th scope="col">Company Name</th>
+            <th scope="col">Contact Title</th>
+            <th scope="col">City</th>
+            <th scope="col">Country</th>
+        </tr>
+        <tr>
+            <td>Wolski  Zajazd</td>
+            <td>Owner</td>
+            <td>Warszawa</td>
+            <td>Poland</td>
+        </tr>
+        <tr>
+            <td>Wilman Kala</td>
+            <td>Owner/Marketing Assistant</td>
+            <td>Helsinki</td>
+            <td>Finland</td>
+        </tr>
+        <tr>
+            <td>White Clover Markets</td>
+            <td>Owner</td>
+            <td>Seattle</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Wellington Importadora</td>
+            <td>Sales Manager</td>
+            <td>Resende</td>
+            <td>Brazil</td>
+        </tr>
+        <tr>
+            <td>Wartian Herkku</td>
+            <td>Accounting Manager</td>
+            <td>Oulu</td>
+            <td>Finland</td>
+        </tr>
+        <tr>
+            <td>Vins et alcools Chevalier</td>
+            <td>Accounting Manager</td>
+            <td>Reims</td>
+            <td>France</td>
+        </tr>
+        <tr>
+            <td>Victuailles en stock</td>
+            <td>Sales Agent</td>
+            <td>Lyon</td>
+            <td>France</td>
+        </tr>
+        <tr>
+            <td>Vaffeljernet</td>
+            <td>Sales Manager</td>
+            <td>århus</td>
+            <td>Denmark</td>
+        </tr>
+        <tr>
+            <td>Trail's Head Gourmet Provisioners</td>
+            <td>Sales Associate</td>
+            <td>Kirkland</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Tradição Hipermercados</td>
+            <td>Sales Representative</td>
+            <td>São Paulo</td>
+            <td>Brazil</td>
+        </tr>
+        <tr>
+            <td>Tortuga Restaurante</td>
+            <td>Owner</td>
+            <td>México D.F.</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Toms Spezialitäten</td>
+            <td>Marketing Manager</td>
+            <td>Münster</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>The Cracker Box</td>
+            <td>Marketing Assistant</td>
+            <td>Butte</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>The Big Cheese</td>
+            <td>Marketing Manager</td>
+            <td>Portland</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Suprêmes délices</td>
+            <td>Accounting Manager</td>
+            <td>Charleroi</td>
+            <td>Belgium</td>
+        </tr>
+    </table>
+</body>
+</html>
