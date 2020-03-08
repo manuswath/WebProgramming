@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- This example will apply the specified styles only to paragraph elements that immediately follow other paragraph elements. This means the first paragraph element on a page would not receive these styles -->
+		<style>
+			p + p {
+			   text-indent: 1.5em;
+			   margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<h2>Title</h2>
+		<p>Paragraph example.</p>
+		<p>Paragraph example.</p>
+		<p>Paragraph example.</p>
+		
+		<div class="box">
+		  <p>Paragraph example.</p>
+		  <p>Paragraph example.</p>
+		</div>
+	
+	</body>
+</html>

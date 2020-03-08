@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			the middle sections of the image are stretched to create the border:
+		-->
+		<style> 
+			#borderimg { 
+			    border: 10px solid transparent;
+			    padding: 15px;
+			    -webkit-border-image: url(images/border.png) 30 stretch; /* Safari 3.1-5 */
+			    -o-border-image: url(images/border.png) 30 stretch; /* Opera 11-12.1 */
+			    border-image: url(images/border.png) 30 stretch;
+			    /*border-image-source: url(images/border.png);*/
+			    border-image-slice: 30;
+			    border-image-width: stretch;
+			    border-image-outset: 0;
+			    border-image-repeat: nil;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<p>The border-image property specifies an image to be used as the border around an element:</p>
+		<p id="borderimg">Here, the middle sections of the image are stretched to create the border.</p>
+		
+		<p>Here is the original image:</p><img src="images/border.png">
+		<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+	
+	</body>
+</html>
